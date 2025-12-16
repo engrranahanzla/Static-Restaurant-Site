@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body & Text */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2em;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff4500;
+        }
+
+        /* Menu Section */
+        #menu {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #menu .section-title {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .menu-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .menu-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* About Us Section */
+        #about {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about .section-title {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact .section-title {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        #contact address {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <h1>Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Our Restaurant</h2>
+            <p>Delicious food, cozy atmosphere, and great service.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Spaghetti Bolognese</h3>
+                <p>A classic Italian pasta dish with a rich tomato and meat sauce.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken served with a side of vegetables and mashed potatoes.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Cheeseburger</h3>
+                <p>A delicious beef patty with melted cheese, lettuce, tomato, and pickles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>We are a family-owned restaurant serving mouthwatering dishes prepared with fresh ingredients. Our chefs create unique recipes with love and passion to provide an unforgettable dining experience.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>If you have any questions or want to make a reservation, feel free to reach out!</p>
+        <address>
+            <p>Email: contact@restaurant.com</p>
+            <p>Phone: +92 317 1436165</p>
+            <p>Location: 123 Main St, Lahore</p>
+        </address>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
